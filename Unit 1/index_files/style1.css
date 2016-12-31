@@ -1,0 +1,16 @@
+body{
+        background:#e3e3e3;
+}
+
+#center{
+   text-align:center;
+    
+}
+#center-text{
+        border-style:dotted;
+        border-color:#89bdd3;
+}
+
+.headers{
+    color:#89bdd3;
+}
