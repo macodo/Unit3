@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en-GB' lang='en-GB'>
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+<title>GParted Details</title>
+</head>
+<body>
+<p>GParted 0.25.0 --enable-libparted-dmraid --enable-online-resize</p>
+<p>Libparted 3.2</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Format /dev/sdb1 as fat32</b>&nbsp;&nbsp;00:00:05&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+calibrate /dev/sdb1&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdb1 (partition)<br />start: 2048<br />end: 24254062<br />size: 24252015 (11.56 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+clear old file system signatures in /dev/sdb1&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 512.00 KiB of zeros at byte offset 0&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 4.00 KiB of zeros at byte offset 67108864&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 512.00 KiB of zeros at byte offset 12416450560&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 4.00 KiB of zeros at byte offset 12416909312&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 8.00 KiB of zeros at byte offset 12417019904&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+flush operating system cache of /dev/sdb&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+set partition type on /dev/sdb1&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new partition type: fat32</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create new fat32 file system&nbsp;&nbsp;00:00:04&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>mkfs.fat -F32 -v -I -n &quot;           &quot; /dev/sdb1</i></b>&nbsp;&nbsp;00:00:04&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>mkfs.fat 3.0.28 (2015-05-16)<br />/dev/sdb1 has 64 heads and 32 sectors per track,<br />hidden sectors 0x0800;<br />logical sector size is 512,<br />using 0xf8 media descriptor, with 24252015 sectors;<br />drive number 0x80;<br />filesystem has 2 32-bit FATs and 16 sectors per cluster.<br />FAT size is 11831 sectors, and provides 1514270 clusters.<br />There are 32 reserved sectors.<br />Volume ID is 5ee5cf88, volume label            .<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Grow /dev/sdb1 from 11.56 GiB to 14.65 GiB</b>&nbsp;&nbsp;00:00:04&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+calibrate /dev/sdb1&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sdb1 (partition)<br />start: 2048<br />end: 24254062<br />size: 24252015 (11.56 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+check file system on /dev/sdb1 for errors and (if possible) fix them&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>fsck.fat -a -w -v /dev/sdb1</i></b>&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>fsck.fat 3.0.28 (2015-05-16)<br />Checking we can access the last sector of the filesystem<br />Boot sector contents:<br />System ID &quot;mkfs.fat&quot;<br />Media byte 0xf8 (hard disk)<br />       512 bytes per logical sector<br />      8192 bytes per cluster<br />        32 reserved sectors<br />First FAT starts at byte 16384 (sector 32)<br />         2 FATs, 32 bit entries<br />   6057472 bytes per FAT (= 11831 sectors)<br />Root directory start at cluster 2 (arbitrary size)<br />Data area starts at byte 12131328 (sector 23694)<br />   1514270 data clusters (12404899840 bytes)<br />32 sectors/track, 64 heads<br />      2048 hidden sectors<br />  24252015 sectors total<br />Reclaiming unconnected clusters.<br />Checking free cluster summary.<br />/dev/sdb1: 1 files, 1/1514270 clusters<br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+grow partition from 11.56 GiB to 14.65 GiB&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>old start: 2048<br />old end: 24254062<br />old size: 24252015 (11.56 GiB)</i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new start: 2048<br />new end: 30719999<br />new size: 30717952 (14.65 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+grow file system to fill the partition&nbsp;&nbsp;00:00:03&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+using libparted
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+</body>
+</html>
